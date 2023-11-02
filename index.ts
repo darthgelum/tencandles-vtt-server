@@ -49,7 +49,7 @@ io.on('connection', (socket) => {
 
     io.to(room).emit('usersUpdated', {
       updatedUsers: usersInRoom,
-      toastText: `${username} has joined the game as ${isGm ? 'the GM' : 'a player'}.`,
+      toastText: `${username} has joined the room as ${isGm ? 'the GM' : 'a player'}.`,
     })
   })
 
@@ -101,7 +101,7 @@ io.on('connection', (socket) => {
 
     io.to(room).emit('usersUpdated', {
       updatedUsers: usersInRoom,
-      toastText: removedUser ? `${removedUser.name} has left the game.` : null,
+      toastText: removedUser ? `${removedUser.name} has left the room.` : null,
     })
   })
 })
