@@ -1,0 +1,26 @@
+{
+  "name": "tencandles-vtt-server",
+  "version": "0.0.1",
+  "description": "Backend for tencandles-vtt",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon - exec 'ts-node' index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc -p ."
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10",
+    "@types/express": "^4.17.18",
+    "@types/node": "^20.8.4",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}

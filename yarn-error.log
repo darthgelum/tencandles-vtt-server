@@ -1,0 +1,56 @@
+Arguments: 
+  /Users/robyn/.nvm/versions/node/v18.16.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add cors express socket.io
+
+PATH: 
+  /Users/robyn/google-cloud-sdk/bin:/Users/robyn/.nvm/versions/node/v18.16.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/robyn/google-cloud-sdk/bin:/Users/robyn/.nvm/versions/node/v18.16.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/robyn/.cargo/bin:/Users/robyn/.local/bin:/Users/robyn/Library/Python/3.8/bin:/Users/robyn/.foundry/bin:/Users/robyn/.local/bin:/Users/robyn/Library/Python/3.8/bin:/Users/robyn/.local/bin:/Users/robyn/Library/Python/3.8/bin:/Users/robyn/.foundry/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/robyn/Desktop/bitd-diceroller-server/package.json: Unexpected token / in JSON at position 128
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "nco-diceroller-api",
+    "version": "0.0.1",
+    "description": "Backend for bitd-diceroller",
+    "dependencies": {
+      // "cors": "^2.8.5",
+      // "express": "^4.18.1",
+      // "socket.io": "^4.5.2",
+      // "unique-names-generator": "^4.7.1"
+    },
+    "scripts": {
+      "dev": "nodemon - exec 'ts-node' index.ts",
+      "start": "node ./dist/index.js",
+      "gcp-build": "tsc -p ."
+    },
+    "engines": {
+      "node": "18.x"
+    },
+    "devDependencies": {
+      // "@types/express": "^4.17.18",
+      // "@types/node": "^20.8.2",
+      // "nodemon": "^3.0.1",
+      // "ts-node": "^10.9.1",
+      // "typescript": "^5.2.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
