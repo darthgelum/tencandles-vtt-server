@@ -54,7 +54,7 @@ io.on('connection', (socket) => {
       toastText: `${user.name} has joined the room as ${
         user.isGm ? 'the GM. To invite other players, send them this page’s URL' : 'a player'
       }.`,
-      isToastInfinite: true,
+      isToastInfinite: user.isGm,
     })
   })
 
