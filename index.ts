@@ -10,7 +10,7 @@ app.use(cors())
 
 const server = http.createServer(app)
 
-const origin = ['https://tencandles-vtt.vercel.app']
+const origin = ['https://tencandles-3915dxj5a-philipp-dmitrovs-projects.vercel.app']
 
 if (process.env.NODE_ENV === 'development') {
   origin.push('http://localhost:5173')
@@ -51,9 +51,8 @@ io.on('connection', (socket) => {
 
     io.to(room).emit('usersUpdated', {
       updatedUsers: usersInRoom,
-      toastText: `${user.name} has joined the room as ${
-        user.isGm ? 'the GM. To invite other players, send them this page’s URL' : 'a player'
-      }.`,
+      toastText: `${user.name} has joined the room as ${user.isGm ? 'the GM. To invite other players, send them this page’s URL' : 'a player'
+        }.`,
       isToastInfinite: user.isGm,
     })
   })
