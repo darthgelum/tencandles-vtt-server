@@ -10,7 +10,7 @@ app.use(cors())
 
 const server = http.createServer(app)
 
-const origin = ['https://tencandles-3915dxj5a-philipp-dmitrovs-projects.vercel.app']
+const origin = ['https://tencandles-3915dxj5a-philipp-dmitrovs-projects.vercel.app', 'https://tencandles-vtt-seven.vercel.app']
 
 if (process.env.NODE_ENV === 'development') {
   origin.push('http://localhost:5173')
